@@ -1,0 +1,14 @@
+[
+  {
+    "id": "task1",
+    "description": "Return factorial of n",
+    "input": "5",
+    "expected_output": "120"
+  },
+  {
+    "id": "task2",
+    "description": "Check if string is palindrome",
+    "input": "racecar",
+    "expected_output": "True"
+  }
+]
