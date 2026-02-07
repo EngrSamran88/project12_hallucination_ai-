@@ -1,0 +1,60 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Project 12: Hallucination in Generative AI Code Outputs: Detection and Mitigation}
+\author{Your Name \\ Student ID}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This project investigates how generative AI models produce incorrect or nonexistent code logic (hallucinations). We analyze failure patterns, propose mitigation techniques, and validate their effectiveness across multiple models.
+\end{abstract}
+
+\section{Introduction}
+Generative AI models can produce code that looks correct but fails functional specifications. This study compares models including Code LLaMA, StarCoder, and LLaMA variants.
+
+\section{Dataset}
+The dataset consists of programming tasks in a strictly defined JSON format (see data/tasks.json).
+
+\section{Methodology}
+\subsection{Models Used}
+\begin{itemize}
+    \item Code LLaMA
+    \item StarCoder
+    \item LLaMA variants
+\end{itemize}
+
+\subsection{Detection of Hallucinations}
+We detect hallucinated patterns by comparing generated outputs against expected outputs and test cases.
+
+\section{Root Cause Analysis}
+We categorize hallucinations by type (control flow errors, incorrect logic, missing edge-case handling).
+
+\section{Mitigation Strategies}
+\begin{itemize}
+    \item Test-driven filtering
+    \item Rule-based output repair
+\end{itemize}
+
+\section{Results}
+Figures and tables summarize error rates and mitigation results.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/hallucination_pattern.png}
+    \caption{Example Hallucination Pattern}
+\end{figure}
+
+\section{Conclusion}
+Summarizes findings and future work.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
